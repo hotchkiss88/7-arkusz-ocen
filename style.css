@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+#pracownicy {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+#arkusz {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#oblicz {
+    background-color: #048000;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin: 20px 0;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 5px;
+}
+
+#oblicz:hover {
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -16px -47px 45px 30px rgba(0, 0, 0, 0);
+}
+
+#title {
+    height: 100px;
+    width: 100%;
+}
+
+#title>span {
+    text-transform: uppercase;
+}
+
+#title>.polski {
+    margin: 35px;
+}
+
+#title>.biologia {
+    margin: 15px;
+}
+
+#title>.geografia {
+    margin: 20px;
+}
+
+#title>.fizyka {
+    margin: 25px;
+}
+
+#title>.chemia {
+    margin-left: 30px;
+}
+
+#title>.informatyka {
+    margin-left: 30px;
+}
+
+.uczen {
+    width: 200px;
+    display: inline-block;
+    margin: 20px;
+}
+
+input[type="number"] {
+    width: 50px;
+    height: 35px;
+    margin: 35px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+input:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.zajecia-dodatkowe {
+    width: 240px;
+    height: 35px;
+    margin-left: 0px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    overflow: scroll;
+    word-wrap: break-word;
+}
+
+.tytul {
+    margin-left: 20px;
+}
+
+#green {
+    background-color: #04e735;
+}
