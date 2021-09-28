@@ -14,7 +14,6 @@ const wynik = (event) => {
     let average = document.querySelectorAll(".srednia");
 
 
-
     function checkAdditionalClasses(classes, classToCompere) {
         let classesToArray = classes.split(",");
         let comperationFlag = false;
@@ -28,7 +27,6 @@ const wynik = (event) => {
         console.log(classesToArray);
         console.log(classToCompere);
         return comperationFlag;
-
     }
 
     for (let i = 1; i < matematyka.length; i++) {
@@ -40,8 +38,28 @@ const wynik = (event) => {
         let chemistryScore = parseFloat(chemia[i].value);
         let computerScienceScore = parseFloat(informatyka[i].value);
 
+        if (mathScore == 1) {
+            name[i].setAttribute("id", "red");
+        }
+        if (polishScore == 1) {
+            name[i].setAttribute("id", "red");
+        }
+        if (biologyScore == 1) {
+            name[i].setAttribute("id", "red");
+        }
+        if (geographyScore == 1) {
+            name[i].setAttribute("id", "red");
+        }
+        if (physicsScore == 1) {
+            name[i].setAttribute("id", "red");
+        }
+        if (chemistryScore == 1) {
+            name[i].setAttribute("id", "red");
+        }
+        if (computerScienceScore == 1) {
+            name[i].setAttribute("id", "red");
+        }
 
-        // console.log(mathScore);
         if (checkAdditionalClasses(zajeciaDodatkowe[i].value, matematyka[i].className) && mathScore < 6) {
             mathScore += 0.5;
 
